@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- link to css -->
+  <link rel="stylesheet" href="style/main.css">
+
+  <!-- title -->
+  <title>PasswordGenerate APP</title>
+</head>
+<body>
+  <!-- main -->
+  <main>
+
+  </main>
+
+  <!-- footer -->
+  <Footer>
+    <form>
+      <!-- caps -->
+      <label for="caps">
+        Letras maisculas ?
+        <input type="checkbox" id="caps">
+      </label>
+
+      <!-- caracteres -->
+      <label for="chars">
+        Caracteres especiais ?
+        <input type="checkbox" id="chars">
+      </label>
+
+      <!-- numbers -->
+      <label for="number">
+        Numeros ?
+        <input type="checkbox" id="number">
+      </label>
+
+      <!-- tamanho da senha -->
+      <label>
+        Qual tamnaho da senha ?
+        <input type="range" id="rangeInput" min="1" max="30" step="1" value="15" oninput="output.value = this.value">
+        <output id="output">15</output>
+      </label>
+    </form>
+
+    <button class="btn_gerar">Gerar senha</button>
+  </Footer>
+
+  <!-- link to script -->
+  <script src="js/core.js"></script>
+</body>
+</html>

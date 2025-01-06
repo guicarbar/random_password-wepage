@@ -1,0 +1,64 @@
+/* import css */
+@import url(reset.css);
+
+/* :root */
+:root {
+  --color1: #808080;
+  --color2: #606060;
+  --color3: #ccc;
+  --colorWhite: #fff;
+  --colorBlack: #00030c;
+}
+
+/* global */
+body {
+  background-color: var(--color2);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* main - area for passwords */
+main {
+  height: 70vh;
+  margin: auto;
+  overflow-y: scroll;
+}
+
+/* footer - area for controlers */
+footer {
+  height: 30vh;
+  background-color: var(--color1);
+  text-align: center;
+}
+
+footer > form {
+  height: 40%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+}
+
+footer > form > label:last-child {
+  width: 35%;
+}
+
+/* botao de gerar */
+.btn_gerar {
+  padding: 1.6em 2.6em;
+  border-radius: 32px;
+  background-color: var(--color2);
+  color: var(--colorWhite);
+  font-weight: 700;
+  font-size: 24px;
+  border: 1px solid var(--color3);
+  transition: all .3s ease;
+}
+
+.btn_gerar:hover {
+  transform: scale(1.1);
+}
+
+.btn_gerar:active {
+  transform: scale(1);
+}
