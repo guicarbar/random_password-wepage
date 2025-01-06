@@ -18,9 +18,24 @@ body {
 
 /* main - area for passwords */
 main {
-  height: 70vh;
+  height: calc(70vh - 5em);
+  padding-top: 5em;
   margin: auto;
   overflow-y: scroll;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+main > p {
+  margin: .4em 0;
+  padding: 1em 2em;
+  color: var(--colorWhite);
+  font-weight: 700;
+  font-size: 20px;
+  border: 1px solid var(--color3);
+  border-radius: 32px;
 }
 
 /* footer - area for controlers */
@@ -34,6 +49,7 @@ footer > form {
   height: 40%;
   width: 100%;
   display: flex;
+  flex-flow: row wrap;
   justify-content: center;
   align-items: center;
   gap: 2em;
@@ -61,4 +77,8 @@ footer > form > label:last-child {
 
 .btn_gerar:active {
   transform: scale(1);
+}
+
+#rangeInput {
+  width: 200px;
 }

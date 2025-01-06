@@ -11,4 +11,5 @@ function addPassword(newPassword) {
 
   // add p to html
   main.appendChild(p)
+  main.scrollTop = main.scrollHeight;
 }
